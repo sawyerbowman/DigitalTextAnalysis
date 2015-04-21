@@ -24,6 +24,11 @@ public:
     //Constructor
     Chapter(ifstream &problemFile, string line, string chapterName);
     
+    //Getters
+    vector<Paragraph*> getParagraphs() { return this->paragraphs; }
+    string getChapterName() { return this->chapterName; }
+    int getParagraphCount() { return this->paragraphCount; }
+    
 private:
     vector<Paragraph*> paragraphs;
     string chapterName;

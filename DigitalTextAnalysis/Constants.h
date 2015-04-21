@@ -15,6 +15,8 @@
 #include <sstream>
 #include <vector>
 
+#include "Chapter.h"
+
 using namespace std;
 
 //Taken from Voyant-Tools

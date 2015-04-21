@@ -28,15 +28,11 @@ public:
     //Asks the user what action to perform
     void analyze();
     
+    //Getter
+    Reader* getBook() { return this->book; }
+    
 private:
     Reader* book;
-    
-    void mostFrequentWords();
-    void quotesBySpeaker();
-    void trendForWord();
-    
-
-    
 };
 
 #endif /* defined(__DigitalTextAnalysis__Console__) */

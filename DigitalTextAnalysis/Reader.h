@@ -24,6 +24,11 @@ public:
     //Constructor
     Reader(string fileName);
     
+    vector<Chapter*> getChapters() { return this->chapters; }
+    string getTitle() { return this->title; }
+    string getAuthor() { return this->author; }
+    string getLanguage() { return this->language; }
+    
 private:
     vector<Chapter*> chapters;
     string title;

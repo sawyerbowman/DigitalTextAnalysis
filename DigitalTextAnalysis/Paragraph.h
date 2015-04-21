@@ -22,9 +22,15 @@ public:
     //Constructor
     Paragraph(ifstream &problemFile, string line);
     
+    //Getters
+    vector<string> getText() { return this->text; }
+    int getWordCount() { return this->wordCount; }
+    bool getIsDialogue() { return this->isDialogue; }
+    
 private:
     vector<string> text;
     int wordCount;
+    bool isDialogue;
     
 };
 

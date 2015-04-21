@@ -15,6 +15,12 @@
 Paragraph::Paragraph(ifstream &problemFile, string line){
     this->wordCount = 0;
     
+    //Determine whether paragraph is dialogue or not
+    this->isDialogue = false;
+    if (line[0] == '-'){
+        this->isDialogue = true;
+    }
+    
     //While it's not a new line, continue adding to text vector
     while (line != "\r"){
         line = line.substr(0, line.size()-1);
@@ -27,5 +33,7 @@ Paragraph::Paragraph(ifstream &problemFile, string line){
         getline(problemFile, line);
     }
 }
+
+
 
 

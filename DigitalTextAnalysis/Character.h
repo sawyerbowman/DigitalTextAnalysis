@@ -14,18 +14,37 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <future>
+#include <ctype.h>
+#include <string>
+
+#include "Chapter.h"
+#include "Paragraph.h"
+#include "Term.h"
+#include "Constants.h"
 
 using namespace std;
 
 class Character {
 public:
     //Constructor
-    Character();
+    Character(string characterName, vector<Chapter*> chapters);
+    
+    //Return frequency of particular term associated with character within range
+    Term* findTermWithinChapters(string term, int chapter1, int chapter2);
+    
+    //Return vector of terms associated with character within range
+    vector<Term*> getAllTermsWithinChapters(int chapter1, int chapter2);
     
 private:
-    vector<string> adjectives;
+    string characterName;
+    vector<Chapter*> chapters;
     
-    
+    bool isInParagraph(Paragraph* paragraph);
+    bool fuzzyMatch(string string1, string string2);
+    bool chaptersInRange(int chapter1, int chapter2);
+    string lowerCase(string string1);
+
 };
 
 #endif /* defined(__DigitalTextAnalysis__Character__) */

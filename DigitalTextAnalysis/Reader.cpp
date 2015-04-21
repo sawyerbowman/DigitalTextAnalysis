@@ -53,7 +53,7 @@ Reader::Reader(string fileName){
                 
                 //create a chapter object object
                 this->chapters.push_back(new Chapter(problemFile, line, chapterName));
-                cout << "Added Chapter: " << count << endl;
+                //cout << "Added Chapter: " << count << endl;
                 count++;
             }
             else if (line == "Fin\r"){
