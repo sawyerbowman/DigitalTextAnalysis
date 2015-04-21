@@ -41,6 +41,8 @@ void saveResults(int chapter, string chapterName, string character, string term,
 void saveResults2(int chapter, string chapterName, string character, string term, int frequency){
     ofstream csvFile;
     csvFile.open("/Users/sawyerbowman/Desktop/don_quijote_results.txt", std::ios_base::app);
+    int index = (int) chapterName.find(".");
+    chapterName = chapterName.substr(0, index);
     
     csvFile << chapter << "\t" << chapterName << "\t" << character << "\t" << term << "\t" << frequency << endl;
     

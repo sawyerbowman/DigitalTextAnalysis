@@ -115,7 +115,10 @@ bool Character::isInParagraph(Paragraph* paragraph){
  */
 
 bool Character::fuzzyMatch(string string1, string string2){
-    if (string1.find(string2) || string2.find(string1)){
+//    if (string1.find(string2) || string2.find(string1)){
+//        return true;
+//    }
+    if (string1 == string2){
         return true;
     }
     return false;
