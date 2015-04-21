@@ -7,9 +7,28 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+
+#include "Console.h"
+
+using namespace std;
+
+/**
+ *Parse the command line args, and run the algorithm
+ */
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    if (argc != 2){
+        cout << "Please enter a filename for the text you'd like to analyze." << endl;
+        exit(0);
+    }
+    
+    string filename = argv[1];
+    
+    Console *console = new Console(filename);
+    
+    cout << "Terminado!" << endl;
+    
     return 0;
 }

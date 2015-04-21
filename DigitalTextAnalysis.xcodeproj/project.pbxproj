@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059FBCB61AE61245008C0073 /* Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059FBCB41AE61245008C0073 /* Reader.cpp */; };
+		059FBCB91AE612B7008C0073 /* Chapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059FBCB71AE612B7008C0073 /* Chapter.cpp */; };
+		059FBCBC1AE612D5008C0073 /* Paragraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059FBCBA1AE612D5008C0073 /* Paragraph.cpp */; };
+		059FBCBF1AE63109008C0073 /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059FBCBD1AE63109008C0073 /* Constants.cpp */; };
 		05E946A41ADC617000FD1E29 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E946A31ADC617000FD1E29 /* main.cpp */; };
+		05E946AC1ADC633B00FD1E29 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E946AA1ADC633B00FD1E29 /* Console.cpp */; };
+		05E946AF1ADC65AE00FD1E29 /* Dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E946AD1ADC65AE00FD1E29 /* Dialogue.cpp */; };
+		05E946B21ADC65BB00FD1E29 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E946B01ADC65BB00FD1E29 /* Character.cpp */; };
+		05E946B51ADC68B300FD1E29 /* Term.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05E946B31ADC68B300FD1E29 /* Term.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		059FBCB41AE61245008C0073 /* Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Reader.cpp; sourceTree = "<group>"; };
+		059FBCB51AE61245008C0073 /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reader.h; sourceTree = "<group>"; };
+		059FBCB71AE612B7008C0073 /* Chapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter.cpp; sourceTree = "<group>"; };
+		059FBCB81AE612B7008C0073 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		059FBCBA1AE612D5008C0073 /* Paragraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paragraph.cpp; sourceTree = "<group>"; };
+		059FBCBB1AE612D5008C0073 /* Paragraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paragraph.h; sourceTree = "<group>"; };
+		059FBCBD1AE63109008C0073 /* Constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
+		059FBCBE1AE63109008C0073 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		05E946A01ADC617000FD1E29 /* DigitalTextAnalysis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DigitalTextAnalysis; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E946A31ADC617000FD1E29 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		05E946AA1ADC633B00FD1E29 /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
+		05E946AB1ADC633B00FD1E29 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
+		05E946AD1ADC65AE00FD1E29 /* Dialogue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dialogue.cpp; sourceTree = "<group>"; };
+		05E946AE1ADC65AE00FD1E29 /* Dialogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialogue.h; sourceTree = "<group>"; };
+		05E946B01ADC65BB00FD1E29 /* Character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Character.cpp; sourceTree = "<group>"; };
+		05E946B11ADC65BB00FD1E29 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		05E946B31ADC68B300FD1E29 /* Term.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Term.cpp; sourceTree = "<group>"; };
+		05E946B41ADC68B300FD1E29 /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,22 @@
 			isa = PBXGroup;
 			children = (
 				05E946A31ADC617000FD1E29 /* main.cpp */,
+				059FBCBD1AE63109008C0073 /* Constants.cpp */,
+				059FBCBE1AE63109008C0073 /* Constants.h */,
+				05E946AA1ADC633B00FD1E29 /* Console.cpp */,
+				05E946AB1ADC633B00FD1E29 /* Console.h */,
+				059FBCB41AE61245008C0073 /* Reader.cpp */,
+				059FBCB51AE61245008C0073 /* Reader.h */,
+				059FBCB71AE612B7008C0073 /* Chapter.cpp */,
+				059FBCB81AE612B7008C0073 /* Chapter.h */,
+				059FBCBA1AE612D5008C0073 /* Paragraph.cpp */,
+				059FBCBB1AE612D5008C0073 /* Paragraph.h */,
+				05E946AD1ADC65AE00FD1E29 /* Dialogue.cpp */,
+				05E946AE1ADC65AE00FD1E29 /* Dialogue.h */,
+				05E946B01ADC65BB00FD1E29 /* Character.cpp */,
+				05E946B11ADC65BB00FD1E29 /* Character.h */,
+				05E946B31ADC68B300FD1E29 /* Term.cpp */,
+				05E946B41ADC68B300FD1E29 /* Term.h */,
 			);
 			path = DigitalTextAnalysis;
 			sourceTree = "<group>";
@@ -119,6 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E946A41ADC617000FD1E29 /* main.cpp in Sources */,
+				059FBCBF1AE63109008C0073 /* Constants.cpp in Sources */,
+				05E946AF1ADC65AE00FD1E29 /* Dialogue.cpp in Sources */,
+				05E946AC1ADC633B00FD1E29 /* Console.cpp in Sources */,
+				05E946B21ADC65BB00FD1E29 /* Character.cpp in Sources */,
+				059FBCBC1AE612D5008C0073 /* Paragraph.cpp in Sources */,
+				059FBCB91AE612B7008C0073 /* Chapter.cpp in Sources */,
+				059FBCB61AE61245008C0073 /* Reader.cpp in Sources */,
+				05E946B51ADC68B300FD1E29 /* Term.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +283,7 @@
 				05E946A91ADC617000FD1E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
