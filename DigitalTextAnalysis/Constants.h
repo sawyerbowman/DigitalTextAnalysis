@@ -19,6 +19,157 @@
 
 using namespace std;
 
+//Words lists
+
+//Words that relate to knighthood
+
+const vector<string> caballeria = {
+    "merced",
+    "vuestra",
+    "caballero",
+    "caballeros",
+    "tierra",
+    "nación",
+    "andante",
+    "escudero",
+    "caballo",
+    "adelante",
+    "andantes",
+    "vuestro",
+    "armas",
+    "caballería",
+    "castillo",
+    "rey",
+    "fuerza",
+    "aventura",
+    "batalla",
+    "batallas",
+    "sangre",
+    "escudero",
+    "escuderos",
+    "lanza",
+    "lanzas",
+    "encantador",
+    "encantadores",
+    "enemigo",
+    "enemigos"
+};
+
+//Words that are considered to be valued
+
+const vector<string> valores = {
+    "buen",
+    "bien",
+    "buena",
+    "deseo",
+    "voluntad",
+    "alma",
+    "razón",
+    "corazón",
+    "amor",
+    "fama",
+    "famoso",
+    "fe",
+    "juicio",
+    "libertad",
+    "honra",
+    "deseos",
+    "valeroso",
+    "virtud",
+    "ánimo",
+    "valiente",
+    "paz",
+    "verdadera",
+    "justicia",
+    "intención",
+    "posible",
+    "gana",
+    "españa",
+    "remedio",
+    "cristiano",
+    "cristianos",
+    "resolución"
+};
+
+//Words that have a negative connotation
+
+const vector<string> mala = {
+    "mal",
+    "mala",
+    "muerte",
+    "pobre",
+    "lágrimas",
+    "sangre",
+    "peligro",
+    "daño",
+    "dolor",
+    "risa",
+    "burla",
+    "miedo",
+    "temor",
+    "desgracia",
+    "duda"
+};
+
+//Words that have to do with perception and text
+
+const vector<string> texto = {
+    "sé",
+    "saber",
+    "sabía",
+    "digo",
+    "ojos",
+    "vio",
+    "ver",
+    "dice",
+    "decir",
+    "cabeza",
+    "cuenta",
+    "contar",
+    "replicó",
+    "replicar",
+    "parecer",
+    "respondió",
+    "responder",
+    "razones",
+    "razón",
+    "diciendo",
+    "decir",
+    "decía",
+    "voz",
+    "rostro",
+    "entender",
+    "entendimiento",
+    "viendo",
+    "ver",
+    "libros",
+    "palabra",
+    "libro",
+    "palabras",
+    "preguntó",
+    "preguntar",
+    "pregunta",
+    "preguntas",
+    "voces",
+    "memoria",
+    "oído",
+    "oír",
+    "lengua",
+    "creer",
+    "creo",
+    "mirar",
+    "cuento",
+    "contar",
+    "cuentos",
+    "juicio",
+    "pensamiento",
+    "pensamientos",
+    "pensar",
+    "leer",
+    "leído",
+    "poesía",
+};
+
 //Taken from Voyant-Tools
 const vector<string> stopwords = {
     "al",

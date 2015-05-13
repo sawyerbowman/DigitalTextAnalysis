@@ -31,10 +31,13 @@ public:
     Character(string characterName, vector<Chapter*> chapters);
     
     //Return frequency of particular term associated with character within range
-    Term* findTermWithinChapters(string term, int chapter1, int chapter2);
+    int findTermsWithinChapters(vector<string> terms, int chapter1, int chapter2);
     
     //Return vector of terms associated with character within range
     vector<Term*> getAllTermsWithinChapters(int chapter1, int chapter2);
+    
+    //Getter
+    string getName() { return this->characterName; }
     
 private:
     string characterName;

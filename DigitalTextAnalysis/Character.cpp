@@ -21,9 +21,9 @@ Character::Character(string characterName, vector<Chapter*> chapters){
  *
  */
 
-Term* Character::findTermWithinChapters(string term, int chapter1, int chapter2){
+int Character::findTermsWithinChapters(vector<string> terms, int chapter1, int chapter2){
     //Check and see if user entered valid chapter numbers
-    int termFrequency = 0;
+    int termsFrequency = 0;
     if (chaptersInRange(chapter1, chapter2)){
         //iterate across every chapter
         for (int i = chapter1; i <= chapter2; i++){
@@ -34,8 +34,10 @@ Term* Character::findTermWithinChapters(string term, int chapter1, int chapter2)
                 if (isInParagraph(paragraph)){
                     //for every word in the paragraph
                     for (string word : paragraph->getText()){
-                        if (lowerCase(word) == lowerCase(term)){
-                            termFrequency++;
+                        for (string term : terms){
+                            if (lowerCase(word) == lowerCase(term)){
+                                termsFrequency++;
+                            }
                         }
                     }
                 }
@@ -43,7 +45,7 @@ Term* Character::findTermWithinChapters(string term, int chapter1, int chapter2)
         }
     }
     
-    return new Term(lowerCase(term), termFrequency);
+    return termsFrequency;
     
 }
 

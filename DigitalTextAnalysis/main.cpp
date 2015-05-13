@@ -19,10 +19,9 @@
 using namespace std;
 
 const string characters[7] = {"quijote", "sancho", "cura", "barbero", "sansón", "cervantes", "cide"};
-const string terms[6] = {"libro", "texto", "leer", "ficción", "caballería", "realidad"};
 
 /**
- *
+ *Save results to file based on params
  */
 
 void saveResults(int chapter, string chapterName, string character, string term, int frequency){
@@ -35,34 +34,30 @@ void saveResults(int chapter, string chapterName, string character, string term,
 }
 
 /**
- *
+ *Save results to file based on params
  */
 
-void saveResults2(int chapter, string chapterName, string character, string term, int frequency){
+void saveResults2(int chapter, string chapterName, string character, string theme, int frequency){
     ofstream csvFile;
     csvFile.open("/Users/sawyerbowman/Desktop/don_quijote_results.txt", std::ios_base::app);
     int index = (int) chapterName.find(".");
     chapterName = chapterName.substr(0, index);
     
-    csvFile << chapter << "\t" << chapterName << "\t" << character << "\t" << term << "\t" << frequency << endl;
+    csvFile << chapter << "\t" << chapterName << "\t" << character << "\t" << theme << "\t" << frequency << endl;
     
     csvFile.close();
 }
 
 
 /**
- *
+ *Testing loop
  */
 
 void testing(Console* console){
+    Character* character = new Character(characters[0], console->getBook()->getChapters());
     for (int i = 0; i < console->getBook()->getChapters().size(); i++){
-        for (int c = 0 ; c < 7; c++){
-            Character* character = new Character(characters[c], console->getBook()->getChapters());
-            for (int t = 0; t < 6; t++){
-                Term* term = character->findTermWithinChapters(terms[t], i, i);
-                saveResults2(i, console->getBook()->getChapters()[i]->getChapterName(), characters[c], terms[t], term->getFrequency());
-            }
-        }
+        int count = character->findTermsWithinChapters(caballeria, i, i);
+        saveResults2(i, console->getBook()->getChapters()[i]->getChapterName(), character->getName(), "caballeria", count);
     }
 }
 
